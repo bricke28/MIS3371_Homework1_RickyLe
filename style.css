@@ -1,0 +1,83 @@
+/*
+Program name: style.css
+Author: Ricky Le
+Date created: February 15, 2026
+Version: 1.0
+*/
+
+/* Tag Selectors */
+body {
+    background-color: #fa9494; /* Light pink background from your drawing */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin: 0;
+}
+
+h1 {
+    color: #b22222; /* Firebrick red */
+    font-family: Georgia, serif;
+}
+
+/* ID Selectors */
+
+.header-container {
+    display: flex;        
+    justify-content: space-between; 
+    align-items: center;         
+    padding: 10px 20px;
+}
+
+/* Specific styling for the logo and name group */
+.logo-name {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    height: 50px;                
+    margin-right: 15px;
+}
+
+.company-title {
+    font-size: 28px;
+    font-weight: bold;
+    font-style: italic;         
+}
+
+#date-display {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Class and Attribute Selectors */
+table {
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+td {
+    padding: 10px;
+}
+
+input[type="submit"] {
+    background-color: #b22222;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #8b0000;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>I-Fast Care Patient Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="banner">
+    <div class="header-container">
+        <div class="logo-name">
+            <img src="logo.png" alt="I-Fast Care Logo" id="logo">
+            <span class="company-title">I-Fast Care Medical</span>
+        </div>
+        <div id="date-display">
+            <script>
+                const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                document.write(new Date().toLocaleDateString('en-US', options));
+            </script>
+        </div>
+    </div>
+</div>
+
+    <div id="main-content">
+        <form action="thankyoupagehomework1.html" method="post">
+            <table>
+                <tr>
+                    <td><label>Full Name*:</label></td>
+                    <td>
+                        <input type="text" name="firstname" placeholder="First Name" maxlength="30" required>
+                        <input type="text" name="mi" placeholder="MI" maxlength="1" style="width: 30px;">
+                        <input type="text" name="lastname" placeholder="Last Name" maxlength="30" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Date of Birth*:</label></td>
+                    <td><input type="text" name="dob" placeholder="MM/DD/YYYY" required></td>
+                </tr>
+                <tr>
+                    <td><label>Social Security*:</label></td>
+                    <td><input type="password" name="ssn" maxlength="11" placeholder="xxx-xx-xxxx" required></td>
+                </tr>
+                <tr>
+                    <td><label>Address 1*:</label></td>
+                    <td><input type="text" name="addr1" maxlength="30" required></td>
+                </tr>
+                <tr>
+                    <td><label>Address 2:</label></td>
+                    <td><input type="text" name="addr2" maxlength="30"></td>
+                </tr>
+                <tr>
+                    <td><label>City/State/Zip*:</label></td>
+                    <td>
+                        <input type="text" name="city" placeholder="City" maxlength="30" required>
+                        <select name="state" required>
+                            <option value="">State</option>
+                            <option value="TX">Texas</option>
+                            <option value="AL">Alabama</option>
+                            </select>
+                        <input type="text" name="zip" placeholder="Zip" maxlength="10" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Email Address*:</label></td>
+                    <td><input type="email" name="email" placeholder="name@domain.tld" required></td>
+                </tr>
+                <tr>
+                    <td><label>User ID*:</label></td>
+                    <td><input type="text" name="userid" maxlength="20" required></td>
+                </tr>
+                <tr>
+                    <td><label>Password*:</label></td>
+                    <td><input type="password" name="password" required></td>
+                </tr>
+                <tr>
+                    <td><label>Re-enter Password*:</label></td>
+                    <td><input type="password" name="repassword" required></td>
+                </tr>
+                <tr>
+                    <td><label>Symptoms:</label></td>
+                    <td><textarea name="symptoms" rows="3" cols="50"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label>How are you feeling? (1-10):</label></td>
+                    <td>1 <input type="range" name="daysofar" min="1" max="10"> 10</td>
+                </tr>
+                <tr>
+                    <td><label>Medical History:</label></td>
+                    <td>
+                        <input type="checkbox" name="history" value="diabetes"> Diabetes
+                        <input type="checkbox" name="history" value="hypertension"> Hypertension
+                        <input type="checkbox" name="history" value="asthma"> Asthma
+                        <input type="checkbox" name="history" value="cholesterol"> High Cholesterol
+                        <input type="checkbox" name="history" value="heart"> Heart Disease
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Gender:</label></td>
+                    <td>
+                        <input type="radio" name="gender" value="male"> Male
+                        <input type="radio" name="gender" value="female"> Female
+                        <input type="radio" name="gender" value="other"> Other
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Are you sexually active?:</label></td>
+                    <td>
+                        <input type="radio" name="sexuallyActive" value="yes"> Yes
+                        <input type="radio" name="sexuallyActive" value="no"> No
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Are you depressed or have had any suicidal thoughts recently?:</label></td>
+                    <td>
+                        <input type="radio" name="depression" value="yes"> Yes
+                        <input type="radio" name="depression" value="no"> No
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center; padding-top: 20px;">
+                        <input type="reset" value="CLEAR AND START OVER">
+                        <input type="submit" value="Submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <div id="footer">
+        <p>PO BOX 18293, Sugarland, TX 77496</p>
+        <button onclick="alert('Contacting support...')">Contact Us</button>
+    </div>
+
+</body>
+</html>
