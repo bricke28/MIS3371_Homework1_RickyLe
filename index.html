@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- things that i need to do, check that each field matches the dictionary, make sure there is proper spacing, change name of files, add more comments -->
+<!-- things that I need to do, check that each field matches the dictionary, make sure there is proper spacing, change name of files, add more comments -->
 <head>
     <meta charset="UTF-8">
     <title>I-Fast Care Patient Registration</title>
@@ -34,11 +34,11 @@
                     </td>
                 </tr>
                 <tr>
-                   <form action="/action_page.php">
-                      <td><label for="dateofbirth">Date of Birth:</label></td>
-                      <td><input type="date" id="dob" name="dateofbirth"></td>
-                   </form>
-                </tr>      
+                <td align="right">Date of birth*:</td>
+                    <td>
+                        <input type="date" name="dob" required>
+                    </td>
+                </tr>  
                 <tr>
                     <td><label>Social Security*:</label></td>
                     <td><input type="password" name="ssn" maxlength="11" placeholder="xxx-xx-xxxx" required></td>
@@ -194,6 +194,7 @@
 
 </body>
 </html>
+
 
 
 
